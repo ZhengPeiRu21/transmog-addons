@@ -1,0 +1,40 @@
+﻿## Interface: 30300
+## Author: Aelobin (The Maelstrom EU) & Lombra (Defias Brotherhood EU)
+## Version: 3.3.2
+## LoadOnDemand: 1
+## RequiredDeps: MogIt
+## X-MogItModuleVersion: 2
+## X-Curse-Packaged-Version: 3.3.2
+## X-Curse-Project-Name: MogIt
+## X-Curse-Project-ID: mogit
+## X-Curse-Repository-ID: wow/mogit/mainline
+
+## Title: MogIt_Accessories
+## Title-frFR: MogIt_Accessoires
+## Title-deDE: MogIt_Zubehör
+## Title-esES: MogIt_Accesorios
+## Title-esMX: MogIt_Accesorios
+## Title-ruRU: MogIt_принадлежности
+## Title-koKR: MogIt_부속물
+## Title-zhCN: MogIt_饰品
+## Title-zhTW: MogIt_飾品
+## Title-ptBR: MogIt_Acessórios
+## Title-itIT: MogIt_Accessories
+
+## Notes: MogIt Data
+## Notes-frFR: MogIt Données
+## Notes-deDE: MogIt Daten
+## Notes-esES: MogIt Datos
+## Notes-esMX: MogIt Datos
+## Notes-ruRU: MogIt данные
+## Notes-koKR: MogIt 데이터
+## Notes-zhCN: MogIt 数据
+## Notes-zhTW: MogIt 的數據
+## Notes-ptBR: MogIt Dados
+## Notes-itIT: MogIt Dati
+
+Bosses.lua
+Colours.lua
+
+Tabards.lua
+Shirts.lua

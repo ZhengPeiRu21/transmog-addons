@@ -1,0 +1,46 @@
+## Interface: 30300
+## Author: Aelobin (The Maelstrom EU) & Lombra (Defias Brotherhood EU)
+## Version: 3.3.2
+## LoadOnDemand: 1
+## RequiredDeps: MogIt
+## X-MogItModuleVersion: 2
+## X-Curse-Packaged-Version: 3.3.2
+## X-Curse-Project-Name: MogIt
+## X-Curse-Project-ID: mogit
+## X-Curse-Repository-ID: wow/mogit/mainline
+
+## Title: MogIt_Cloth
+## Title-frFR: MogIt_Tissu
+## Title-deDE: MogIt_Stoff
+## Title-esES: MogIt_Tela
+## Title-esMX: MogIt_Tela
+## Title-ruRU: MogIt_Ткань
+## Title-koKR: MogIt_천
+## Title-zhCN: MogIt_布甲
+## Title-zhTW: MogIt_布料
+## Title-ptBR: MogIt_Tecido
+## Title-itIT: MogIt_Cloth
+
+## Notes: MogIt Data
+## Notes-frFR: MogIt Données
+## Notes-deDE: MogIt Daten
+## Notes-esES: MogIt Datos
+## Notes-esMX: MogIt Datos
+## Notes-ruRU: MogIt данные
+## Notes-koKR: MogIt 데이터
+## Notes-zhCN: MogIt 数据
+## Notes-zhTW: MogIt 的數據
+## Notes-ptBR: MogIt Dados
+## Notes-itIT: MogIt Dati
+
+Bosses.lua
+Colours.lua
+
+Head.lua
+Shoulders.lua
+Chest.lua
+Wrists.lua
+Hands.lua
+Waist.lua
+Legs.lua
+Feet.lua

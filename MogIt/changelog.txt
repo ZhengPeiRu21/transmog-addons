@@ -1,0 +1,52 @@
+v1.5 04/18/2021
+- Widened link textbox
+- Added ability to use target's model or gear.
+	- Target must in range and inspectable.
+- Attempt to fix preview issues
+--------------------------------------------------------------------------------------------------------
+v1.4 02/25/2021
+- Added 1 missing plate belt
+- Further improvements on duplicate appearences.
+- Sheath type filtering implemented.
+- Disabled non-functioning options.
+- Disabled quest completion check.
+--------------------------------------------------------------------------------------------------------
+v1.3 02/04/2021
+- Fixed ChestType filtering (robe/tunic) requires items to be cached.
+- Removed Thottbot and MMO Champion database links, added Rising Gods and EvoWoW Wrath databases.
+- Added 16 missing items, removed 2 unobtainable item.
+- Reworked how Display IDs are listed in the local database to better list unique and duplicate appearances.
+	- Instead of the Display ID being an item's actual Display ID it is now based on item Model and Texture
+--------------------------------------------------------------------------------------------------------
+v1.2 01/26/2021
+- Item Level filter now works
+- Name filter now works
+	- Both of these filters will use the cached data if available, otherwise will default to local database.
+- Uncached items now have a red asterisk
+- Sorting by Level Requirement now has secondary ItemID sorting instead of by Item Level.
+- Added separate sort by ItemID.
+--------------------------------------------------------------------------------------------------------
+v1.1 01/25/2021
+- Added 3 new columns to item database: item name, item level, and sheath ID.
+	- This is in an attempt to fix the item name and item level filtering, and add a new filter for sheath type.
+- Unknown and uncached items now display as the default name and quality in the databases.
+	- Items directly displayed are automatically cached, secondary and tertiary items are not cached until cycled (alt+leftclick).
+- Fixed issue where item icons would not display next to item names.
+	- If an icon does not display, the item does not exist.
+- Reduced default size of item icons.
+- Sorting by Level Requirement now has secondary Item Level sorting instead of by Display ID.
+- Added seperate sort by Item Level.
+- Added vendor tag to roughly 2000 items.
+--------------------------------------------------------------------------------------------------------
+v1.0 01/23/2021
+- Corrected data on thousands of items:  LevelReq, faction, quest source, zone, etc.
+- Removed dozens of items that were never obtainable by players.  Kept items that were obtainable in prior patches.
+- Added handful of missing items
+- Cleaned up Enchant List.  Note:  All weapon enchants are listed by enchant name.  
+- Reverted AceLibraries back to 3.3.5 version, correcting issue where MogIt's AceLibraries would affect other addons.
+- Corrected issue where other Backported addons (Details specifically) would break the Background effect.
+- Faction filter now defaults to showing both factions.
+--------------------------------------------------------------------------------------------------------
+Credits to:
+Original MogIt: Aelobin (The Maelstrom EU) & Lombra (Defias Brotherhood EU)
+1st Backport: decemberx (WoWCircle)

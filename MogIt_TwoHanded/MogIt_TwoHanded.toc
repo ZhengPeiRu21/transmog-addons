@@ -1,0 +1,43 @@
+## Interface: 30300
+## Author: Aelobin (The Maelstrom EU) & Lombra (Defias Brotherhood EU)
+## Version: 3.3.2
+## LoadOnDemand: 1
+## RequiredDeps: MogIt
+## X-MogItModuleVersion: 2
+## X-Curse-Packaged-Version: 3.3.2
+## X-Curse-Project-Name: MogIt
+## X-Curse-Project-ID: mogit
+## X-Curse-Repository-ID: wow/mogit/mainline
+
+## Title: MogIt_Two-Hand
+## Title-frFR: MogIt_Deux mains
+## Title-deDE: MogIt_Zweihändig
+## Title-esES: MogIt_Dos Manos
+## Title-esMX: MogIt_Dos Manos
+## Title-ruRU: MogIt_Двуручное
+## Title-koKR: MogIt_양손
+## Title-zhCN: MogIt_双手
+## Title-zhTW: MogIt_雙手
+## Title-ptBR: MogIt_Duas Mãos
+## Title-itIT: MogIt_Two-Hand
+
+## Notes: MogIt Data
+## Notes-frFR: MogIt Données
+## Notes-deDE: MogIt Daten
+## Notes-esES: MogIt Datos
+## Notes-esMX: MogIt Datos
+## Notes-ruRU: MogIt данные
+## Notes-koKR: MogIt 데이터
+## Notes-zhCN: MogIt 数据
+## Notes-zhTW: MogIt 的數據
+## Notes-ptBR: MogIt Dados
+## Notes-itIT: MogIt Dati
+
+Bosses.lua
+Colours.lua
+
+Sword.lua
+Axe.lua
+Mace.lua
+Polearm.lua
+Staff.lua

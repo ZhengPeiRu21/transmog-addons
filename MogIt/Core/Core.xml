@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Ui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.blizzard.com/wow/ui/" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+<!--  if find textures "Interface\FrameGeneral\_UI-Frame" and "Interface\FrameGeneral\UI-Frame"-->
+<Texture name="_UI-Frame-TitleTileBg" file="Interface\AddOns\MogIt\FrameGeneral\_UI-Frame" virtual="true" horizTile="true" >
+	<Size x="256" y="17"/> 
+	<TexCoords left="0.00000000" right="1.00000000" top="0.28906250" bottom="0.42187500"/> 
+</Texture>
+
+<Texture name="UI-Frame-Portrait" file="Interface\AddOns\MogIt\FrameGeneral\UI-Frame" virtual="true">
+	<Size x="78" y="78"/>
+	<TexCoords left="0.00781250" right="0.61718750" top="0.00781250" bottom="0.61718750"/> 
+</Texture>
+
+<Texture name="UI-Frame-TopCornerRight" file="Interface\AddOns\MogIt\FrameGeneral\UI-Frame" virtual="true">
+    <Size x="33" y="33"/>
+    <TexCoords left="0.63281250" right="0.89062500" top="0.00781250" bottom="0.26562500"/> 
+</Texture>
+
+<Texture name="UI-Frame-TopLeftCorner" file="Interface\AddOns\MogIt\FrameGeneral\UI-Frame" virtual="true">
+    <Size x="32" y="32"/>
+    <TexCoords left="0.63281250" right="0.88281250" top="0.28125000" bottom="0.53125000"/> 
+</Texture>
+
+<Texture name="_UI-Frame-TitleTile" file="Interface\AddOns\MogIt\FrameGeneral\_UI-Frame" virtual="true" horizTile="true" >
+    <Size x="256" y="28"/> 
+    <TexCoords left="0.00000000" right="1.00000000" top="0.43750000" bottom="0.65625000"/> 
+</Texture>
+
+<Texture name="_UI-Frame-TopTileStreaks" file="Interface\AddOns\MogIt\FrameGeneral\_UI-Frame" virtual="true" horizTile="true" >
+    <Size x="256" y="37"/> 
+    <TexCoords left="0.00000000" right="1.00000000" top="0.67187500" bottom="0.96093750"/> 
+</Texture>
+<Texture name="UI-Frame-BotCornerLeft" file="Interface\AddOns\MogIt\FrameGeneral\UI-Frame" virtual="true">
+    <Size x="14" y="14"/>
+    <TexCoords left="0.00781250" right="0.11718750" top="0.63281250" bottom="0.74218750"/> 
+</Texture>
+<Texture name="UI-Frame-BotCornerRight" file="Interface\AddOns\MogIt\FrameGeneral\UI-Frame" virtual="true">
+    <Size x="11" y="11"/>
+    <TexCoords left="0.13281250" right="0.21875000" top="0.89843750" bottom="0.98437500"/> 
+</Texture>
+<Texture name="_UI-Frame-Bot" file="Interface\AddOns\MogIt\FrameGeneral\_UI-Frame" virtual="true" horizTile="true" >
+    <Size x="256" y="9"/>
+    <TexCoords left="0.00000000" right="1.00000000" top="0.20312500" bottom="0.27343750"/> 
+</Texture>
+<Texture name="!UI-Frame-LeftTile" file="Interface\AddOns\MogIt\FrameGeneral\!UI-Frame" virtual="true" vertTile="true" >
+    <Size x="16" y="256"/> 
+    <TexCoords left="0.35937500" right="0.60937500" top="0.00000000" bottom="1.00000000"/> 
+</Texture>
+<Texture name="!UI-Frame-RightTile" file="Interface\AddOns\MogIt\FrameGeneral\!UI-Frame" virtual="true" vertTile="true" >
+    <Size x="10" y="256"/> 
+    <TexCoords left="0.17187500" right="0.32812500" top="0.00000000" bottom="1.00000000"/> 
+</Texture>
+
+
+<Frame name="PortraitFrameTemplate" virtual="true">
+    <Size x="338" y="424"/>
+    <Layers>
+      <Layer level="BACKGROUND" textureSubLevel="-6">
+        <Texture name="$parentBg" file="Interface\AddOns\MogIt\FrameGeneral\UI-Background-Rock" horizTile="true" vertTile="true">
+          <Anchors>
+            <Anchor point="TOPLEFT" x="2" y="-21"/>
+            <Anchor point="BOTTOMRIGHT" x="-2" y="2"/>
+          </Anchors>
+        </Texture>
+        <Texture name="$parentTitleBg" inherits="_UI-Frame-TitleTileBG">
+          <Anchors>
+            <Anchor point="TOPLEFT" x="2" y="-3"/>
+            <Anchor point="TOPRIGHT" x="-25" y="-3"/>
+          </Anchors>
+        </Texture>
+      </Layer>
+      <Layer level="OVERLAY" textureSubLevel="-1">
+        <Texture name="$parentPortrait" parentKey="portrait">
+          <Size x="60" y="60"/>
+          <Anchors>
+            <Anchor point="TOPLEFT" x="-6" y="7" />
+          </Anchors>
+        </Texture>
+      </Layer>
+      <Layer level="OVERLAY">
+        <Texture name="$parentPortraitFrame" inherits="UI-Frame-Portrait" parentKey="portraitFrame">
+          <Anchors>
+            <Anchor point="TOPLEFT" x="-14" y="11"/>
+          </Anchors>
+        </Texture>
+        <Texture name="$parentTopRightCorner" inherits="UI-Frame-TopCornerRight">
+          <Anchors>
+            <Anchor point="TOPRIGHT" x="0" y="1"/>
+          </Anchors>
+        </Texture>
+        <Texture name="$parentTopLeftCorner" inherits="UI-Frame-TopLeftCorner" hidden="true" parentKey="topLeftCorner">
+          <Anchors>
+            <Anchor point="TOPLEFT" x="-6" y="1"/>
+          </Anchors>
+        </Texture>
+        <Texture name="$parentTopBorder" inherits="_UI-Frame-TitleTile" parentKey="topBorderBar">
+          <Anchors>
+            <Anchor point="TOPLEFT" relativeTo="$parentPortraitFrame" relativePoint="TOPRIGHT" x="0" y="-10" />
+            <Anchor point="TOPRIGHT" relativeTo="$parentTopRightCorner" relativePoint="TOPLEFT"/>
+          </Anchors>
+        </Texture>
+        <FontString name="$parentTitleText" inherits="GameFontNormal" text="" parentKey="TitleText">
+          <Anchors>
+            <Anchor point="TOP" x="0" y="-4"/>
+            <Anchor point="LEFT" x="60"/>
+            <Anchor point="RIGHT" x="-60"/>
+          </Anchors>
+        </FontString>
+      </Layer>
+      <Layer level="BORDER">
+        <Texture name="$parentTopTileStreaks" inherits="_UI-Frame-TopTileStreaks" parentKey="TopTileStreaks">
+          <Anchors>
+            <Anchor point="TOPLEFT" x="0" y="-21"/>
+            <Anchor point="TOPRIGHT" x="-2" y="-21"/>
+          </Anchors>
+        </Texture>
+        <Texture name="$parentBotLeftCorner" inherits="UI-Frame-BotCornerLeft">
+          <Anchors>
+            <Anchor point="BOTTOMLEFT" x="-6" y="-5"/>
+          </Anchors>
+        </Texture>
+        <Texture name="$parentBotRightCorner" inherits="UI-Frame-BotCornerRight">
+          <Anchors>
+            <Anchor point="BOTTOMRIGHT" x="0" y="-5"/>
+          </Anchors>
+        </Texture>
+        <Texture name="$parentBottomBorder" inherits="_UI-Frame-Bot">
+          <Anchors>
+            <Anchor point="BOTTOMLEFT" relativeTo="$parentBotLeftCorner" relativePoint="BOTTOMRIGHT" y="0"/>
+            <Anchor point="BOTTOMRIGHT" relativeTo="$parentBotRightCorner" relativePoint="BOTTOMLEFT" y="0"/>
+          </Anchors>
+        </Texture>
+        <Texture name="$parentLeftBorder" inherits="!UI-Frame-LeftTile" parentKey="leftBorderBar">
+          <Anchors>
+            <Anchor point="TOPLEFT" relativeTo="$parentPortraitFrame" relativePoint="BOTTOMLEFT" x="8" y="0" />
+            <Anchor point="BOTTOMLEFT" relativeTo="$parentBotLeftCorner" relativePoint="TOPLEFT"/>
+          </Anchors>
+        </Texture>
+        <Texture name="$parentRightBorder" inherits="!UI-Frame-RightTile">
+          <Anchors>
+            <Anchor point="TOPRIGHT" relativeTo="$parentTopRightCorner" relativePoint="BOTTOMRIGHT" x="1"/>
+            <Anchor point="BOTTOMRIGHT" relativeTo="$parentBotRightCorner" relativePoint="TOPRIGHT"/>
+          </Anchors>
+        </Texture>
+      </Layer>
+    </Layers>
+    <Frames>
+      <Button name="$parentCloseButton" inherits="UIPanelCloseButton">
+        <Anchors>
+          <Anchor point="TOPRIGHT" relativePoint="TOPRIGHT">
+            <Offset x="4" y="5"/>
+          </Anchor>
+        </Anchors>
+      </Button>
+	</Frames>
+</Frame>
+
+<Frame name="ButtonFrameTemplate" inherits="PortraitFrameTemplate" virtual="true">
+	<Layers>
+		<Layer level="BORDER">
+			<Texture name="$parentBtnCornerLeft" inherits="UI-Frame-BtnCornerLeft">
+				<Anchors>
+					<Anchor point="BOTTOMLEFT" x="-2" y="-1"/>
+				</Anchors>
+			</Texture>
+			<Texture name="$parentBtnCornerRight" inherits="UI-Frame-BtnCornerRight">
+				<Anchors>
+					<Anchor point="BOTTOMRIGHT" x="0" y="-1"/>
+				</Anchors>
+			</Texture>
+			<Texture name="$parentButtonBottomBorder" inherits="_UI-Frame-BtnBotTile">
+				<Anchors>
+					<Anchor point="BOTTOMLEFT" relativeTo="$parentBtnCornerLeft" relativePoint="BOTTOMRIGHT" y="3"/>
+					<Anchor point="BOTTOMRIGHT" relativeTo="$parentBtnCornerRight" relativePoint="BOTTOMLEFT"/>
+				</Anchors>
+			</Texture>
+		</Layer>
+	</Layers>
+	<Frames>
+		<Frame name="$parentInset" useParentLevel="true" inherits="InsetFrameTemplate" parentKey="Inset">
+			<Anchors>
+				<Anchor point="TOPLEFT" x="4" y="-60" />
+				<Anchor point="BOTTOMRIGHT" x="-6" y="26" />
+			</Anchors>
+		</Frame>
+	</Frames>
+</Frame>
+
+<Button name="MagicButtonTemplate" inherits="UIPanelButtonTemplate2" virtual="true">
+    <Size x="80" y="22"/>
+    <Scripts>
+      <OnLoad function="MagicButton_OnLoad" />
+    </Scripts>
+</Button>
+
+<Slider name="UIPanelScrollBarTrimTemplate" virtual="true">
+    <Size>
+      <AbsDimension x="20" y="0"/>
+    </Size>
+    <Layers>
+      <Layer level="BACKGROUND">
+        <Texture name="$parentBG" setAllPoints="true" hidden="true">
+          <Color r="0" g="0" b="0" a=".85"/>
+        </Texture>
+      </Layer>
+      <Layer level="ARTWORK">
+        <Texture name="$parentTop" file="Interface\PaperDollInfoFrame\UI-Character-ScrollBar">
+          <Size>
+            <AbsDimension x="24" y="48"/>
+          </Size>
+          <Anchors>
+            <Anchor point="TOPLEFT">
+              <Offset>
+                <AbsDimension x="-4" y="17"/>
+              </Offset>
+            </Anchor>
+          </Anchors>
+          <TexCoords left="0" right="0.45" top="0" bottom=".20"/>
+        </Texture>
+        <Texture name="$parentBottom" file="Interface\PaperDollInfoFrame\UI-Character-ScrollBar">
+          <Size>
+            <AbsDimension x="24" y="64"/>
+          </Size>
+          <Anchors>
+            <Anchor point="BOTTOMLEFT">
+              <Offset>
+                <AbsDimension x="-4" y="-15"/>
+              </Offset>
+            </Anchor>
+          </Anchors>
+          <TexCoords left="0.515625" right="0.97" top="0.1440625" bottom="0.4140625"/>
+        </Texture>
+        <Texture name="$parentMiddle" file="Interface\PaperDollInfoFrame\UI-Character-ScrollBar">
+          <Anchors>
+            <Anchor point="TOPLEFT" relativeTo="$parentTop" relativePoint="BOTTOMLEFT"/>
+            <Anchor point="BOTTOMRIGHT" relativeTo="$parentBottom" relativePoint="TOPRIGHT"/>
+          </Anchors>
+          <TexCoords left="0" right="0.45" top="0.1640625" bottom="1"/>
+        </Texture>
+      </Layer> 
+    </Layers>
+    <Frames>
+      <Button name="$parentScrollUpButton" inherits="UIPanelScrollUpButtonTemplate">
+        <Anchors>
+          <Anchor point="BOTTOM" relativePoint="TOP" x="0" y="-2"/>
+        </Anchors>
+        <Scripts>
+          <OnClick>
+            local parent = self:GetParent();
+            local scrollStep = self:GetParent().scrollStep or (parent:GetHeight() / 2);
+            parent:SetValue(parent:GetValue() - scrollStep);
+            PlaySound("UChatScrollButton");
+          </OnClick>
+        </Scripts>
+      </Button>
+      <Button name="$parentScrollDownButton" inherits="UIPanelScrollDownButtonTemplate">
+        <Anchors>
+          <Anchor point="TOP" relativePoint="BOTTOM" x="0" y="2"/>
+        </Anchors>
+        <Scripts>
+          <OnClick>
+            local parent = self:GetParent();
+            local scrollStep = self:GetParent().scrollStep or (parent:GetHeight() / 2);
+            parent:SetValue(parent:GetValue() + scrollStep);
+            PlaySound("UChatScrollButton");
+          </OnClick>
+        </Scripts>
+      </Button>
+    </Frames>
+    <Scripts>
+      <OnValueChanged>
+        self:GetParent():SetVerticalScroll(value);
+      </OnValueChanged>
+    </Scripts>
+    <ThumbTexture name="$parentThumbTexture" inherits="UIPanelScrollBarButton" file="Interface\Buttons\UI-ScrollBar-Knob">
+      <Size>
+        <AbsDimension x="18" y="24"/>
+      </Size>
+      <TexCoords left="0.20" right="0.80" top="0.125" bottom="0.875"/>
+    </ThumbTexture>
+  </Slider>
+
+ <EditBox name="SearchBoxTemplate" inherits="InputBoxTemplate" autoFocus="false" virtual="true">
+    <Layers>
+      <Layer level="OVERLAY">
+        <Texture name="$parentSearchIcon" file="Interface\Common\UI-Searchbox-Icon" parentKey="searchIcon">
+          <Size x="14" y="14"/>
+          <Anchors>
+            <Anchor point="LEFT" x="-" y="-2"/>
+          </Anchors>
+        </Texture>
+      </Layer>
+    </Layers>
+    <Frames>
+      <Button name="$parentClearButton" parentKey="clearButton" hidden="true">
+        <Size x="17" y="17"/>
+        <Anchors>
+          <Anchor point="RIGHT" x="-3" y="0"/>
+        </Anchors>
+        <Layers>
+          <Layer level="ARTWORK">
+            <Texture file="Interface\FriendsFrame\ClearBroadcastIcon" alpha="0.5" parentKey="texture">
+              <Size>
+                <AbsDimension x="17" y="17"/>
+              </Size>
+              <Anchors>
+                <Anchor point="TOPLEFT" x="0" y="0"/>
+              </Anchors>
+            </Texture>
+          </Layer>
+        </Layers>
+        <Scripts>
+          <OnEnter>
+            self.texture:SetAlpha(1.0);
+          </OnEnter>
+          <OnLeave>
+            self.texture:SetAlpha(0.5);
+          </OnLeave>
+          <OnMouseDown>
+            if self:IsEnabled() then
+              self.texture:SetPoint("TOPLEFT", 1, -1);
+            end
+          </OnMouseDown>
+          <OnMouseUp>
+            self.texture:SetPoint("TOPLEFT", 0, 0);
+          </OnMouseUp>
+          <OnClick>
+            PlaySound("igMainMenuOptionCheckBoxOn");
+            local editBox = self:GetParent();
+            if editBox.clearFunc then
+              editBox.clearFunc(editBox);
+            end
+           
+            editBox:SetText("");
+            if not editBox:HasFocus() then
+              editBox:GetScript("OnEditFocusLost")(editBox);
+            end
+            editBox:ClearFocus();
+          </OnClick>
+        </Scripts>
+      </Button>
+    </Frames>
+    <Scripts>
+      <OnLoad function="SearchBoxTemplate_OnLoad"/>
+      <OnEscapePressed function="EditBox_ClearFocus"/>
+      <OnEditFocusLost function="SearchBoxTemplate_OnEditFocusLost"/>
+      <OnEditFocusGained function="SerachBoxTemplate_OnEditFocusGained"/>
+    </Scripts>
+  </EditBox>
+ 
+<Frame name="TooltipBorderedFrameTemplate" virtual="true">
+    <Layers>
+      <Layer level="BACKGROUND">
+        <Texture parentKey="BorderTopLeft" file="Interface\Tooltips\UI-Tooltip-TL">
+          <Size x="8" y="8"/>
+          <Anchors>
+            <Anchor point="TOPLEFT"/>
+          </Anchors>
+        </Texture>
+        <Texture parentKey="BorderTopRight" file="Interface\Tooltips\UI-Tooltip-TR">
+          <Size x="8" y="8"/>
+          <Anchors>
+            <Anchor point="TOPRIGHT"/>
+          </Anchors>
+        </Texture>
+        <Texture parentKey="BorderBottomRight" file="Interface\Tooltips\UI-Tooltip-BR">
+          <Size x="8" y="8"/>
+          <Anchors>
+            <Anchor point="BOTTOMRIGHT"/>
+          </Anchors>
+        </Texture>
+        <Texture parentKey="BorderBottomLeft" file="Interface\Tooltips\UI-Tooltip-BL">
+          <Size x="8" y="8"/>
+          <Anchors>
+            <Anchor point="BOTTOMLEFT"/>
+          </Anchors>
+        </Texture>
+        <Texture parentKey="BorderTop" file="Interface\Tooltips\UI-Tooltip-T">
+          <Size x="8" y="8"/>
+          <Anchors>
+            <Anchor point="TOPLEFT" relativeKey="$parent.BorderTopLeft" relativePoint="TOPRIGHT"/>
+            <Anchor point="TOPRIGHT" relativeKey="$parent.BorderTopRight" relativePoint="TOPLEFT"/>
+          </Anchors>
+        </Texture>
+        <Texture parentKey="BorderRight" file="Interface\Tooltips\UI-Tooltip-R">
+          <Size x="8" y="8"/>
+          <Anchors>
+            <Anchor point="TOPRIGHT" relativeKey="$parent.BorderTopRight" relativePoint="BOTTOMRIGHT"/>
+            <Anchor point="BOTTOMRIGHT" relativeKey="$parent.BorderBottomRight" relativePoint="TOPRIGHT"/>
+          </Anchors>
+        </Texture>
+        <Texture parentKey="BorderBottom" file="Interface\Tooltips\UI-Tooltip-B">
+          <Size x="8" y="8"/>
+          <Anchors>
+            <Anchor point="BOTTOMLEFT" relativeKey="$parent.BorderBottomLeft" relativePoint="BOTTOMRIGHT"/>
+            <Anchor point="BOTTOMRIGHT" relativeKey="$parent.BorderBottomRight" relativePoint="BOTTOMLEFT"/>
+          </Anchors>
+        </Texture>
+        <Texture parentKey="BorderLeft" file="Interface\Tooltips\UI-Tooltip-L">
+          <Size x="8" y="8"/>
+          <Anchors>
+            <Anchor point="TOPLEFT" relativeKey="$parent.BorderTopLeft" relativePoint="BOTTOMLEFT"/>
+            <Anchor point="BOTTOMLEFT" relativeKey="$parent.BorderBottomLeft" relativePoint="TOPLEFT"/>
+          </Anchors>
+        </Texture>
+        <Texture parentKey="Background">
+          <Anchors>
+            <Anchor point="TOPLEFT" relativeKey="$parent.BorderTopLeft" relativePoint="BOTTOMRIGHT"/>
+            <Anchor point="BOTTOMRIGHT" relativeKey="$parent.BorderBottomRight" relativePoint="TOPLEFT"/>
+          </Anchors>
+          <Color r="0" g="0" b="0" a="0.8"/>
+        </Texture>
+      </Layer>
+    </Layers>
+  </Frame>
+
+<Script file="Core.lua"/>
+<Script file="GUI.lua"/>
+<Script file="Preview.lua"/>
+<Script file="Links.lua"/>
+<Script file="URL.lua"/>
+<Script file="Tooltip.lua"/>
+<Script file="Options.lua"/>
+<Script file="Templates.lua"/>
+<Script file="Enchants.lua"/>
+
+<Include file="Filters\Filters.xml"/>
+<Include file="Sorting\Sorting.xml"/>
+
+</Ui>

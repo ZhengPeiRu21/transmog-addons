@@ -1,0 +1,14 @@
+<Bindings>
+	<Binding name="MogIt" header="MogIt">
+		MogIt:ToggleFrame()
+	</Binding>
+	<Binding name="MogItPreview">
+		MogIt:TogglePreview()
+	</Binding>
+	<Binding name="MogIt_TooltipScrollUp" hidden="true">
+		MogIt.tooltip.model:SetFacing(MogIt.tooltip.model:GetFacing()+0.3);
+	</Binding>
+	<Binding name="MogIt_TooltipScrollDown" hidden="true">
+		MogIt.tooltip.model:SetFacing(MogIt.tooltip.model:GetFacing()-0.3);
+	</Binding>
+</Bindings>

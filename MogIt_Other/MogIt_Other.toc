@@ -1,0 +1,42 @@
+## Interface: 30300
+## Author: Aelobin (The Maelstrom EU) & Lombra (Defias Brotherhood EU)
+## Version: 3.3.2
+## LoadOnDemand: 1
+## RequiredDeps: MogIt
+## X-MogItModuleVersion: 2
+## X-Curse-Packaged-Version: 3.3.2
+## X-Curse-Project-Name: MogIt
+## X-Curse-Project-ID: mogit
+## X-Curse-Repository-ID: wow/mogit/mainline
+
+## Title: MogIt_Other
+## Title-frFR: MogIt_Autre
+## Title-deDE: MogIt_Sonstige
+## Title-esES: MogIt_Otro
+## Title-esMX: MogIt_Otro
+## Title-ruRU: MogIt_Другое
+## Title-koKR: MogIt_기타
+## Title-zhCN: MogIt_其它
+## Title-zhTW: MogIt_其他
+## Title-ptBR: MogIt_Outro
+## Title-itIT: MogIt_Other
+
+## Notes: MogIt Data
+## Notes-frFR: MogIt Données
+## Notes-deDE: MogIt Daten
+## Notes-esES: MogIt Datos
+## Notes-esMX: MogIt Datos
+## Notes-ruRU: MogIt данные
+## Notes-koKR: MogIt 데이터
+## Notes-zhCN: MogIt 数据
+## Notes-zhTW: MogIt 的數據
+## Notes-ptBR: MogIt Dados
+## Notes-itIT: MogIt Dati
+
+Bosses.lua
+Colours.lua
+
+Shield.lua
+Cloak.lua
+Held in Off-Hand.lua
+Misc.lua

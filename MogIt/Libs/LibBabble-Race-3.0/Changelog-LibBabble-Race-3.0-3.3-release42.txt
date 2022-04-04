@@ -1,0 +1,20 @@
+------------------------------------------------------------------------
+r25 | nevcairiel | 2010-10-10 12:18:09 +0000 (Sun, 10 Oct 2010) | 1 line
+Changed paths:
+   A /tags/3.3-release42 (from /trunk:24)
+
+Weekly Tag - #42
+------------------------------------------------------------------------
+r24 | nevcairiel | 2010-10-10 12:17:51 +0000 (Sun, 10 Oct 2010) | 1 line
+Changed paths:
+   M /trunk/LibBabble-Race-3.0.lua
+
+Automated LibBabble re-generation from the localization system
+------------------------------------------------------------------------
+r22 | nevcairiel | 2010-09-12 12:33:50 +0000 (Sun, 12 Sep 2010) | 1 line
+Changed paths:
+   M /trunk/.pkgmeta
+   D /trunk/LibStub
+
+Remove hard-embeded LibStub
+------------------------------------------------------------------------

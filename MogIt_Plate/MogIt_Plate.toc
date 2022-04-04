@@ -1,0 +1,46 @@
+## Interface: 30300
+## Author: Aelobin (The Maelstrom EU) & Lombra (Defias Brotherhood EU)
+## Version: 3.3.2
+## LoadOnDemand: 1
+## RequiredDeps: MogIt
+## X-MogItModuleVersion: 2
+## X-Curse-Packaged-Version: 3.3.2
+## X-Curse-Project-Name: MogIt
+## X-Curse-Project-ID: mogit
+## X-Curse-Repository-ID: wow/mogit/mainline
+
+## Title: MogIt_Plate
+## Title-frFR: MogIt_Plaques
+## Title-deDE: MogIt_Platte
+## Title-esES: MogIt_Placas
+## Title-esMX: MogIt_Placas
+## Title-ruRU: MogIt_Латы
+## Title-koKR: MogIt_판금
+## Title-zhCN: MogIt_板甲
+## Title-zhTW: MogIt_鎧甲
+## Title-ptBR: MogIt_Placas
+## Title-itIT: MogIt_Plate
+
+## Notes: MogIt Data
+## Notes-frFR: MogIt Données
+## Notes-deDE: MogIt Daten
+## Notes-esES: MogIt Datos
+## Notes-esMX: MogIt Datos
+## Notes-ruRU: MogIt данные
+## Notes-koKR: MogIt 데이터
+## Notes-zhCN: MogIt 数据
+## Notes-zhTW: MogIt 的數據
+## Notes-ptBR: MogIt Dados
+## Notes-itIT: MogIt Dati
+
+Bosses.lua
+Colours.lua
+
+Head.lua
+Shoulders.lua
+Chest.lua
+Wrists.lua
+Hands.lua
+Waist.lua
+Legs.lua
+Feet.lua

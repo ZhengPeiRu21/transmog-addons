@@ -1,0 +1,28 @@
+﻿## Interface: 30300
+## Title: MogIt
+## Author: Aelobin (The Maelstrom EU) & Lombra (Defias Brotherhood EU) & ZhengPeiru (ChromieCraft)
+## Version: 3.3.2
+## SavedVariables: MogItDB, MogItWishlist
+## OptionalDeps: DataStore_Containers
+## Notes: Transmogrification Assistant
+## Notes-frFR: Transmogrification Assistante
+## Notes-deDE: Transmogrifikation Assistentin
+## Notes-esES: Transfigurar Ayudante
+## Notes-esMX: Transfigurar Ayudante
+## Notes-ruRU: трансмогрификация помощником
+## Notes-koKR: 형상변환 조교
+## Notes-zhCN: 物品幻化系统 助理
+## Notes-zhTW: 塑形 助理
+## Notes-ptBR: Assistente Transmogrification
+## Notes-itIT: Transmogrification Assistant
+## X-Category: Roleplay & Transmogrification
+## X-Localizations: enUS, frFR, deDE, esES, esMX, ruRU, koKR, zhCN, zhTW, ptBR, itIT
+## X-Curse-Packaged-Version: 3.3.2
+## X-Curse-Project-Name: MogIt
+## X-Curse-Project-ID: mogit
+
+Libs\Embeds.xml
+Locale\Locale.xml
+
+Core\Core.xml
+Modules\Modules.xml

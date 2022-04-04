@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Ui xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.blizzard.com/wow/ui/" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+<Script file="Filters.lua"/>
+
+<Script file="name.lua"/>
+<Script file="level.lua"/>
+<Script file="itemLevel.lua"/>
+<Script file="faction.lua"/>
+<Script file="class.lua"/>
+<Script file="source.lua"/>
+<Script file="slot.lua"/>
+<Script file="quality.lua"/>
+<Script file="bind.lua"/>
+<Script file="hasItem.lua"/>
+<Script file="chestType.lua"/>
+<Script file="sheath.lua"/>
+
+</Ui>
