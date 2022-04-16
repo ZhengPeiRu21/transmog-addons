@@ -1,5 +1,5 @@
 ## Interface: 30300
 ## Title: transmogTip
 ## Notes: Adds Transmog collection tooltips
-## SavedVariablesPerCharacter: TransmogTipList
+## SavedVariables: TransmogTipList
 core.lua
