@@ -21,18 +21,4 @@ Many thanks to Aelobin (The Maelstrom EU) and Lombra (Defias Brotherhood EU) as 
 Place all directories into your Interface/AddOns directory
 
 ## How to Sync with Server Data
-If installing for a character who is already having a server-stored appearance collection, you may want to sync initial data with the server. There are also some other times that server will record an item as collected but addon will not, such as completing a quest but not equipping the reward.
-
-A script is provided to sync addon data with server data. Syncing with the server requires access to the server's MySQL database - if you are not having access, you may need to ask your server admin to do it for you.
-
-### Sync Script Requirements
-* Python 3
-* Python MySQL Connector (can be installed through `pip install mysql-connector-python`)
-
-### Sync Steps
-1. Edit syncTransmog.py to put your MySQL credentials in the correct location
-2. (optional) Edit account_id in the script to your account_id
-3. Run the syncTransmog.py script. If you did not edit the account_id, you will be prompted to enter either your account_id or character name.
-4. After sync is complete, a file `transmogTip.lua` will be output. Place this file in \<WoW Dir\>/WTF/Account/\<AccountName\>/\<CharName\>/SavedVariables, and overwrite any existing files.
-  
-Alternately, you just can play without performing a sync, and over time most discrepency will be resolved as you equip items.
+There are some ways transmog items can be added to the appearance collection which are difficult to track through the add on API, leading to some times when the local database is out of date. If this happens, just run the command `.transmog sync` and the local database will be synced with the server.
